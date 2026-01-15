@@ -10,13 +10,13 @@ clear
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     OS="mac"
-    INSTALL_DIR="$HOME/Desktop/LeoIshikawaAnalyzer"
+    INSTALL_DIR="$HOME/Desktop/IshikawaAnalyzer"
 elif [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "cygwin" ]] || [[ -n "$WSL_DISTRO_NAME" ]]; then
     OS="windows"
-    INSTALL_DIR="$HOME/Desktop/LeoIshikawaAnalyzer"
+    INSTALL_DIR="$HOME/Desktop/IshikawaAnalyzer"
 else
     OS="linux"
-    INSTALL_DIR="$HOME/Desktop/LeoIshikawaAnalyzer"
+    INSTALL_DIR="$HOME/Desktop/IshikawaAnalyzer"
 fi
 
 echo "╔════════════════════════════════════════════════════════╗"
