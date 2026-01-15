@@ -1,1 +1,1 @@
-# ishikawa-analyzer
+# Ishikawa Analyzer
