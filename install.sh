@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # ============================================
-# LEO'S ISHIKAWA ANALYZER - v4.0 CYBER FIXED
-# Visual TRON/Matrix original mantido
-# Multi-AI corrigido e funcionando
+# ISHIKAWA ANALYZER - v4.0
+# Original TRON/Matrix visual maintained
+# Multi-AI corrected and working
 # ============================================
 
 clear
@@ -21,16 +21,16 @@ fi
 
 echo "╔════════════════════════════════════════════════════════╗"
 echo "║                                                        ║"
-echo "║   LEO'S ISHIKAWA ANALYZER v4.0 CYBER EDITION          ║"
-echo "║   • Visual TRON/Matrix Original ✅                    ║"
-echo "║   • Multi-AI Corrigido ✅                             ║"
-echo "║   • Claude + Gemini + OpenAI ✅                       ║"
+echo "║   ISHIKAWA ANALYZER v4.0                               ║"
+echo "║   • Original TRON/Matrix Visual ✅                     ║"
+echo "║   • Multi-AI Corrected ✅                             ║"
+echo "║   • Claude + Gemini + OpenAI ✅                        ║"
 echo "║                                                        ║"
 echo "╚════════════════════════════════════════════════════════╝"
 echo ""
 
 if ! command -v python3 &> /dev/null && ! command -v python &> /dev/null; then
-    echo "❌ Python não encontrado!"
+    echo "❌ Python not found!"
     exit 1
 fi
 
@@ -41,7 +41,7 @@ fi
 mkdir -p "$INSTALL_DIR"
 cd "$INSTALL_DIR"
 
-echo "📦 Criando app com visual cyber original..."
+echo "📦 Creating app with original cyber visual..."
 
 # Criar index.html com VISUAL CYBER COMPLETO
 cat > index.html << 'HTMLEND'
@@ -1269,43 +1269,43 @@ JSON only, no markdown.`;
             let errorMsg = `API Error ${response.status}\n\n`;
             
             if (response.status === 401) {
-                errorMsg += '❌ API Key inválida ou expirada\n\n';
-                errorMsg += 'Solução:\n';
-                errorMsg += `• Vá em ${PROVIDERS[aiProvider].url}\n`;
-                errorMsg += '• Crie nova API Key\n';
-                errorMsg += '• Clique em ⚙️ SETTINGS e atualize';
+                errorMsg += '❌ Invalid or expired API Key\n\n';
+                errorMsg += 'Solution:\n';
+                errorMsg += `• Go to ${PROVIDERS[aiProvider].url}\n`;
+                errorMsg += '• Create new API Key\n';
+                errorMsg += '• Click on ⚙️ SETTINGS and update';
             } else if (response.status === 429) {
-                errorMsg += '❌ Limite de requisições excedido\n\n';
-                errorMsg += 'Solução:\n';
-                errorMsg += '• Aguarde 1-2 minutos\n';
-                errorMsg += '• Ou troque de provedor (⚙️ SETTINGS)';
+                errorMsg += '❌ Request limit exceeded\n\n';
+                errorMsg += 'Solution:\n';
+                errorMsg += '• Wait 1-2 minutes\n';
+                errorMsg += '• Or switch provider (⚙️ SETTINGS)';
             } else if (response.status === 403) {
-                errorMsg += '❌ Sem créditos ou acesso negado\n\n';
+                errorMsg += '❌ No credits or access denied\n\n';
                 if (aiProvider === 'openai') {
-                    errorMsg += 'OpenAI requer créditos pagos:\n';
-                    errorMsg += '• Adicione $5+ em platform.openai.com/settings/organization/billing\n';
-                    errorMsg += '• OU use Gemini (grátis) em ⚙️ SETTINGS';
+                    errorMsg += 'OpenAI requires paid credits:\n';
+                    errorMsg += '• Add $5+ at platform.openai.com/settings/organization/billing\n';
+                    errorMsg += '• OR use Gemini (free) in ⚙️ SETTINGS';
                 } else if (aiProvider === 'claude') {
-                    errorMsg += 'Claude requer créditos:\n';
-                    errorMsg += '• Adicione créditos em console.anthropic.com\n';
-                    errorMsg += '• OU use Gemini (grátis) em ⚙️ SETTINGS';
+                    errorMsg += 'Claude requires credits:\n';
+                    errorMsg += '• Add credits at console.anthropic.com\n';
+                    errorMsg += '• OR use Gemini (free) in ⚙️ SETTINGS';
                 } else {
-                    errorMsg += 'Solução:\n';
-                    errorMsg += '• Verifique sua conta\n';
-                    errorMsg += '• Tente outro provedor';
+                    errorMsg += 'Solution:\n';
+                    errorMsg += '• Check your account\n';
+                    errorMsg += '• Try another provider';
                 }
             } else if (response.status === 404) {
-                errorMsg += '❌ Modelo não encontrado\n\n';
-                errorMsg += 'Solução:\n';
-                errorMsg += '• API do Google mudou\n';
-                errorMsg += '• Tente Claude ou OpenAI\n';
-                errorMsg += '• Ou aguarde atualização';
+                errorMsg += '❌ Model not found\n\n';
+                errorMsg += 'Solution:\n';
+                errorMsg += '• Google API changed\n';
+                errorMsg += '• Try Claude or OpenAI\n';
+                errorMsg += '• Or wait for update';
             } else {
-                errorMsg += `Detalhes: ${JSON.stringify(errorData)}\n\n`;
-                errorMsg += 'Solução:\n';
-                errorMsg += '• Verifique API Key\n';
-                errorMsg += '• Verifique créditos\n';
-                errorMsg += '• Tente outro provedor';
+                errorMsg += `Details: ${JSON.stringify(errorData)}\n\n`;
+                errorMsg += 'Solution:\n';
+                errorMsg += '• Check API Key\n';
+                errorMsg += '• Check credits\n';
+                errorMsg += '• Try another provider';
             }
             
             throw new Error(errorMsg);
@@ -1442,7 +1442,7 @@ if [[ "$OS" == "mac" ]] || [[ "$OS" == "linux" ]]; then
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 echo "╔════════════════════════════════════════════════════╗"
-echo "║  LEO'S ISHIKAWA ANALYZER v4.0 CYBER              ║"
+echo "║  ISHIKAWA ANALYZER v4.0 CYBER              ║"
 echo "╚════════════════════════════════════════════════════╝"
 if command -v python3 &> /dev/null; then
     python3 -m http.server 8000 &
@@ -1470,7 +1470,7 @@ STARTBAT
 fi
 
 cat > README.txt << 'README'
-LEO'S ISHIKAWA ANALYZER v4.0 CYBER EDITION
+ISHIKAWA ANALYZER v4.0 CYBER EDITION
 ===========================================
 
 VISUAL TRON/MATRIX ORIGINAL MANTIDO!
@@ -1498,9 +1498,9 @@ echo "╔═══════════════════════�
 echo "║         ✅ v4.0 CYBER EDITION INSTALLED!              ║"
 echo "╚════════════════════════════════════════════════════════╝"
 echo ""
-echo "📍 $INSTALL_DIR"
+echo "📍 Location: $INSTALL_DIR"
 echo ""
-echo "🎨 VISUAL CYBER TRON/MATRIX:"
+echo "🎨 CYBER TRON/MATRIX VISUAL:"
 echo "   • Red/Gold/Black theme"
 echo "   • Animated grid background"
 echo "   • Glowing effects"
@@ -1513,4 +1513,4 @@ echo "   • OpenAI"
 echo ""
 echo "🚀 Double-click to launch!"
 echo ""
-read -p "Press ENTER..."
+read -p "Press ENTER to exit..."
