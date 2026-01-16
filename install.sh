@@ -50,7 +50,7 @@ cat > index.html << 'HTMLEND'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo's Ishikawa Analyzer v4.0 Cyber</title>
+    <title>Ishikawa Analyzer v4.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -59,7 +59,7 @@ cat > index.html << 'HTMLEND'
         <!-- HEADER COM VISUAL CYBER -->
         <div class="header">
             <div class="scan-line"></div>
-            <h1 class="title cyber-text">LEO'S ISHIKAWA ROOT CAUSE ANALYZER</h1>
+            <h1 class="title cyber-text">ISHIKAWA ANALYZER</h1>
             <p class="subtitle">v4.0 Cyber Edition - Multi-AI Analysis System</p>
             <button class="settings-btn cyber-btn" onclick="openSettings()">⚙️ SETTINGS</button>
             <div class="ai-badge" id="aiBadge">SYSTEM READY</div>
