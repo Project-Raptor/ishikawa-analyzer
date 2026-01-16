@@ -76,7 +76,7 @@ The interface features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ishikawa-analyzer.git
+git clone https://github.com/Project-Raptor/ishikawa-analyzer
 cd ishikawa-analyzer
 
 # Run the installer
@@ -115,7 +115,7 @@ cd ~/Desktop/IshikawaAnalyzer
 
 **Windows:**
 
-```
+```env
 Double-click "Abrir Leo's Ishikawa.bat"
 ```
 
@@ -123,7 +123,7 @@ Double-click "Abrir Leo's Ishikawa.bat"
 
 The application will automatically open at:
 
-```
+```env
 http://localhost:8000
 ```
 
@@ -295,14 +295,3 @@ Press `Ctrl+C` in the terminal to stop the local server.
 
 MIT License - Feel free to use, modify, and distribute.
 
----
-
-## 🙏 Acknowledgments
-
-- Kaoru Ishikawa for the Fishbone diagram methodology
-- The AI providers for their powerful APIs
-- The TRON/Matrix aesthetics for visual inspiration
-
----
-
-**Made with ❤️ and ⚡ by Leo**
